@@ -1,11 +1,8 @@
-Jack - personal portfolio
+Hennadii - personal portfolio
 
 # HEDER
 
-Jack.
-
-En
-Ar
+Hennadii.
 
 aria-label = Change Theme
 title = Change Theme
