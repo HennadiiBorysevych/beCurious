@@ -390,6 +390,7 @@ p {
 .logo a {
   color: var(--color-primary);
   font-family: var(--ff-saira-stencil-one);
+  color: #eeff00;
 }
 
 .logo span {
@@ -616,6 +617,7 @@ main {
 .hero-wrapper p {
   margin: 20px 0px 0px;
   max-width: 540px;
+  line-height: 1.8;
 }
 
 .hero-wrapper h3 {
@@ -1001,7 +1003,10 @@ a.inline-link {
 }
 
 
-
+.description-text{
+  font-family: var(--ff-roboto);
+  line-height: 1.8;
+}
 
 
 /*-----------------------------------*\
@@ -1826,10 +1831,7 @@ textarea.input-field {
   }
 
 }
-
-
-
-@media screen and (max-width:967px) {
+@media screen and (max-width:999px) {
   .mobile-email {
     display: none;
   }
