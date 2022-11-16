@@ -595,6 +595,7 @@ fill: #a8b2d1;}
       width: 19px;
         position: fixed;
         left: 40px;
+        bottom: 0;
         right: auto;
         z-index: 10;
         color: var(--color-primary);
@@ -776,23 +777,23 @@ fill: #a8b2d1;}
       outline: 0px;
         }
 
-    .jbGgbG {
+    .job-decsruption {
       position: relative;
       width: 100%;
       margin-left: 20px;
     }
         @media screen and (max-width:1080px) {
-          .jbGgbG{
+          .job-decsruption{
             margin-left: 0;
     
           }
         }
-    .QgHxr {
+    .job-decsruption-wrapper {
       width: 100%;
       height: auto;
       padding: 10px 5px;
      }
-    .QgHxr h3 {
+    .job-decsruption-wrapper h3 {
       margin-bottom: 2px;
       font-size: var(--fz-xxl);
       font-weight: 500;
@@ -801,12 +802,12 @@ fill: #a8b2d1;}
       margin-bottom: 15px;
         }
     @media screen and (max-width:1080px) {
-      .QgHxr h3{
+      .job-decsruption-wrapper h3{
         display: block;
 
       }
     }   
-        .QgHxr h3 .company {
+        .job-decsruption-wrapper h3 .company {
           color: var(--green);
         }
 a.inline-link {
@@ -817,22 +818,22 @@ a.inline-link {
   transition: var(--transition);
   color: var(--green);
 }
-  .QgHxr .range {
+  .job-decsruption-wrapper .range {
           margin-bottom: 25px;
           color: var(--light-slate);
          font-family: var(--font-mono);
  font-size: var(--fz-xs);
        }
 
-      .QgHxr ul {
+      .job-decsruption-wrapper ul {
       padding: 0px;
       margin: 0px;
-      
       font-size: var(--fz-lg);
     }
-    .QgHxr ul li {
+    .job-decsruption-wrapper ul li {
       position: relative;
       margin-bottom: 10px;
+            list-style: circle;
     }
 /*-----------------------------------*\
  * #STATS
@@ -1577,7 +1578,11 @@ content: "";
   .about-banner { margin-bottom: 0; }
 
 
-
+@media screen and (max-width:967px) {
+  .mobile-email {
+    display: none;
+  }
+}
 
   /**
    * SKILLS
