@@ -7,8 +7,6 @@
   /**
    * colors
    */
-
-  --raw-seinna: hsl(24, 74%, 58%);
   --sizzling-sunrise: hsl(51, 95%, 54%);
   --scarlet: hsl(13, 96%, 47%);
   --black: hsl(0, 0%, 0%);
@@ -130,7 +128,7 @@ body.dark_theme {
 body.light_theme {
   --dark-navy: #cececf;
   --bg-primary: #ffffff;
-  --bg-secondary: hsl(0, 0%, 100%);
+  --bg-secondary: hsla(0, 0%, 100%, 0.336);
   --color-primary: hsl(0, 0%, 12%);
   --color-secondary: hsl(0, 0%, 37%);
   --card-shadow: hsla(0, 0%, 0%, 0.1);
@@ -210,6 +208,10 @@ ion-icon {
   color: var(--bg-primary);
 }
 
+p::first-letter{
+  margin-left: 15px;
+}
+
 html {
   font-family: var(--ff-roboto);
   scroll-behavior: smooth;
@@ -219,7 +221,7 @@ body {
   background: var(--bg-primary);
   transition: var(--transition-1);
 
-  color: var(--slate);
+  color: var(--color-primary);
   font-family: var(--font-sans);
   font-size: var(--fz-xl);
 }
@@ -495,7 +497,7 @@ p {
   visibility: hidden;
   transition: 0.75s cubic-bezier(0.71, 0.01, 0.24, 0.99);
   transition-delay: 0.5s;
-  z-index: 1;
+  z-index: -1;
 }
 
 .navbar-link--accent {
@@ -535,12 +537,11 @@ p {
 .navbar-link::before {
   content: "";
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 0;
   left: 0;
-  height: 5px;
+  height: 2px;
   width: 0;
-  background: var(--raw-seinna);
+  background:#eeff00;
   transition: var(--transition-1);
 }
 
@@ -618,6 +619,7 @@ main {
   margin: 20px 0px 0px;
   max-width: 540px;
   line-height: 1.8;
+  color: var(--slate);
 }
 
 .hero-wrapper h3 {
@@ -1224,7 +1226,7 @@ a.inline-link {
 }
 
 .contact-list-item .contact-info {
-  color: var(--slate);
+  color: var(--color-primary);
   font-style: normal;
   line-height: 1.6;
   transition: var(--transition-1);
