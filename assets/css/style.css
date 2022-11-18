@@ -609,7 +609,7 @@ main {
 
 .big-heading {
   margin: 0px;
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: clamp(40px, 8vw, 65px);
   font-weight: 600;
   color: var(--lightest-slate);
   line-height: 1.1;
@@ -1043,7 +1043,7 @@ a.inline-link {
   left: 20px;
   bottom: 5px;
   width: 93px;
-  background: var(--raw-seinna);
+  background: var(--sizzling-sunrise);
   border-radius: 100px;
   transition: var(--transition-1);
   z-index: -1;
@@ -1109,10 +1109,6 @@ a.inline-link {
   opacity: 1;
 }
 
-
-
-
-
 /*-----------------------------------*\
  * #PROJECT
 \*-----------------------------------*/
@@ -1130,6 +1126,7 @@ a.inline-link {
   overflow: hidden;
   border-radius: var(--radius-12);
   box-shadow: 2px 4px 6px hsla(0, 0%, 0%, 0.2);
+  color: var(--white);
 }
 
 .project-card::after {
@@ -1161,22 +1158,23 @@ a.inline-link {
   background: var(--bg-primary);
   padding: 6px 12px;
   width: max-content;
-  box-shadow: var(--shadow-1);
-  transform: translateY(20px);
-  opacity: 0;
-  transition: var(--transition-1);
+  background-color: transparent ;
+  /* box-shadow: var(--shadow-1); */
+  /* transform: translateY(20px); */
+  /* opacity: 0; */
+  /* transition: var(--transition-1); */
 }
 
 .project-card .publish-date {
   font-size: var(--fs-6);
-  color: var(--color-primary);
+  color: var(--white);
   transition-delay: 0s;
 }
-
+/* 
 .project-card:is(:hover, :focus) :is(.card-title, .publish-date) {
   transform: translateY(0);
   opacity: 1;
-}
+} */
 
 .project-card:is(:hover, :focus) .publish-date {
   transition-delay: 0.1s;
