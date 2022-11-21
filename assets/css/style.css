@@ -609,7 +609,7 @@ main {
 
 .big-heading {
   margin: 0px;
-  font-size: clamp(40px, 8vw, 65px);
+  font-size: clamp(40px, 8vw, 58px);
   font-weight: 600;
   color: var(--lightest-slate);
   line-height: 1.1;
@@ -617,7 +617,7 @@ main {
 
 .hero-wrapper p {
   margin: 20px 0px 0px;
-  max-width: 540px;
+  max-width: 620px;
   line-height: 1.8;
   color: var(--slate);
 }
