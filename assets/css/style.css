@@ -160,6 +160,7 @@ li {
 
 a {
   text-decoration: none;
+  cursor: none;
 }
 
 a,
@@ -224,6 +225,7 @@ body {
   color: var(--color-primary);
   font-family: var(--font-sans);
   font-size: var(--fz-xl);
+  cursor: none;
 }
 
 
@@ -1881,4 +1883,21 @@ textarea.input-field {
     max-width: 450px;
   }
 
+}
+#cursor {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+#cursor-shape {
+  width: 15px;
+  height: 15px;
+  margin-top: -50%;
+  margin-left: -50%;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  background-color: var(--sizzling-sunrise);
 }
