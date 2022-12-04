@@ -1901,3 +1901,7 @@ textarea.input-field {
   border: 2px solid var(--blue);
   background-color: var(--sizzling-sunrise);
 }
+@media screen and (max-width:1024px) {
+  #cursor-shape{
+    display: none;
+  }}
