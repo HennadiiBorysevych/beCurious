@@ -158,11 +158,6 @@ li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  cursor: none;
-}
-
 a,
 img,
 time,
@@ -194,7 +189,11 @@ input,
 textarea {
   width: 100%;
 }
-
+a,
+button {
+  text-decoration: none;
+  cursor: none;
+}
 ion-icon {
   pointer-events: none;
 }
@@ -1905,3 +1904,19 @@ textarea.input-field {
   #cursor-shape{
     display: none;
   }}
+        .tabs__btn {
+          padding: 0.5rem 0.75rem;
+          text-decoration: none;
+          text-align: center;
+          flex-shrink: 0;
+          flex-grow: 1;
+          border: 1px solid transparent;
+          
+        }     
+        .tabs__pane {
+          display: none;
+        }
+    
+        .tabs__pane_show {
+          display: block;
+        }
