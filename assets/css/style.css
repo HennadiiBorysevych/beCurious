@@ -1919,3 +1919,8 @@ textarea.input-field {
         .tabs__pane_show {
           display: block;
         }
+
+.feather.navbar-link,
+.feather-instagram.navbar-link{
+  padding: 0;
+}
