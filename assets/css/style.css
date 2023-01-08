@@ -598,7 +598,9 @@ main {
   width: 125%;
   margin-bottom: 30px;
 }
-
+.hero-wrapper{
+  margin-right: auto;
+}
 .hero-wrapper h1 {
   margin: 0px 0px 30px 4px;
   color: var(--green);
