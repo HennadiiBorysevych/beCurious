@@ -1104,7 +1104,7 @@ a.inline-link {
   place-items: center;
   border-radius: var(--radius-12);
   box-shadow: var(--shadow-1);
-  cursor: help;
+  /* cursor: help; */
 }
 
 .skill-card:hover .tooltip {
